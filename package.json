@@ -1,0 +1,28 @@
+{
+  "name": "conventional-changelog-custom",
+  "version": "1.0.0",
+  "description": "Extend git commit message from angular style",
+  "main": "index.js",
+  "scripts": {
+    "changelog": "conventional-changelog -i CHANGELOG.md -s -n ./index.js",
+    "publish": "git push --follow-tags origin master"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Redpoint1/conventional-changelog-custom.git"
+  },
+  "author": "Richard Rozar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Redpoint1/conventional-changelog-custom/issues"
+  },
+  "homepage": "https://github.com/Redpoint1/conventional-changelog-custom#readme",
+  "dependencies": {
+    "compare-func": "^1.3.2",
+    "conventional-changelog": "^3.1.8",
+    "conventional-recommended-bump": "^5.0.0"
+  },
+  "devDependencies": {
+    "conventional-changelog-cli": "^2.0.21"
+  }
+}
