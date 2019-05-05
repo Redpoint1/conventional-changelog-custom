@@ -36,14 +36,16 @@ function getWriterOpts() {
         commit.type = `Breaking changes`;
       } else if (commit.type === `feat`) {
         commit.type = `Features`;
+      } else if (commit.type === `change`) {
+        commit.type = `Changes`;
       } else if (commit.type === `fix`) {
         commit.type = `Bug Fixes`;
       } else if (commit.type === `perf`) {
         commit.type = `Performance Improvements`;
-      } else if (commit.type === `revert`) {
-        commit.type = `Reverts`;
       } else if (commit.type === `docs`) {
         commit.type = `Documentation`;
+      } else if (commit.type === `revert`) {
+        commit.type = `Reverts`;
       } else if (discard) {
         return;
       } else if (commit.type === `style`) {
