@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "changelog": "conventional-changelog -i CHANGELOG.md -s -n ./index.js",
-    "publish": "git push --follow-tags origin master"
+    "release": "conventional-github-releaser -n ./index.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
     "conventional-recommended-bump": "^5.0.0"
   },
   "devDependencies": {
-    "conventional-changelog-cli": "^2.0.21"
+    "conventional-changelog-cli": "^2.0.21",
+    "conventional-github-releaser": "^3.1.2"
   }
 }
