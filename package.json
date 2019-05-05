@@ -1,6 +1,6 @@
 {
   "name": "conventional-changelog-custom",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Extend git commit message from angular style",
   "main": "index.js",
   "scripts": {
